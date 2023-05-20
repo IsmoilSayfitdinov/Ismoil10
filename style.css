@@ -1,0 +1,38 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  .input__wrapper{
+    position: relative;
+  }
+  
+  input{
+    border: none;
+    border-bottom: 2px solid #0000002c;
+    font-size: 14px;
+    outline: none;
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+  }
+  
+  input::placeholder{
+    opacity: 0;
+  }
+  
+  label, 
+  input:focus + label{
+    position: absolute;
+    left: 10px;
+    top: -15px;
+    transition: 0.3s;
+    color: gray;
+  }
+  
+  
+  input:placeholder-shown + label{
+    top: 13px;
+  }
